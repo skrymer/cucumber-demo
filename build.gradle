@@ -1,0 +1,31 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.9.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+
+group = 'com.skrymer'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile 'info.cukes:cucumber-core:1.2.5'
+	compile 'info.cukes:cucumber-java8:1.2.5'
+	compile 'info.cukes:cucumber-junit:1.2.5'
+
+  compile 'org.seleniumhq.selenium:selenium-java:3.4.0'
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
