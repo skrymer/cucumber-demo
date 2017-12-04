@@ -16,7 +16,6 @@ public class BrowserDriver {
   public synchronized static WebDriver getCurrentDriver() {
     if (mDriver==null) {
       try {
-        System.setProperty("webdriver.chrome.driver", "/home/skrymer/coding/github/cucumber-demo/chromedriver_linux64/chromedriver");
         mDriver = new ChromeDriver();
       } finally{
         Runtime.getRuntime().addShutdownHook(
