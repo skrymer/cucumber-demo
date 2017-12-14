@@ -1,3 +1,4 @@
+@smoke @wof
 Feature: Search google
 
 Scenario Outline:
