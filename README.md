@@ -2,7 +2,12 @@
 
 ## Run the tests
 
-run ./gradlew from command line
+### Using IDE 
+use RunCukesTest to run tests in your IDE - uses a JunitRunner 
+
+### Using gradle
+
+run ./gradlew cucumber from command line
  
 using selenium hub:
  
