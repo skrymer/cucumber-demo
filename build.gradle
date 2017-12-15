@@ -24,7 +24,7 @@ task cucumber() {
 			main = "cucumber.api.cli.Main"
 			systemProperties = System.properties
 			classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
-			args = ['--plugin', 'pretty', "--tags", "${tags}", '--glue', 'com.skrymer.cucumberdemo', 'src/test/resources/features']
+			args = ['--plugin', 'html:build/cucumber', "--tags", "${tags}", '--glue', 'com.skrymer.cucumberdemo', 'src/test/resources/features']
 		}
 	}
 }
